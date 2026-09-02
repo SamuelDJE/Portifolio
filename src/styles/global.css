@@ -1,0 +1,25 @@
+@import "reset.css";
+@import "fonts.css";
+@import "variaveis.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+/* O SEGREDO DO LAYOUT: Transforma o Body na tela inteira */
+body {
+    background-color: var(--main-background); /* Usa sua variável do main */
+    min-height: 100vh; /* Faz o site ocupar 100% da altura do monitor */
+    display: flex;
+    flex-direction: column; /* Empilha Header, Main e Footer de cima para baixo */
+    justify-content: space-between; /* Joga o Header pro teto e o Footer pro chão */
+    margin: 0; 
+    overflow-x: hidden;
+}
+
+/* O Main cresce para preencher o vazio central */
+main {
+    flex-grow: 1; /* Ocupa todo o espaço livre restante */
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente no meio da tela */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+}

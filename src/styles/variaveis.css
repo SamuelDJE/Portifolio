@@ -1,0 +1,64 @@
+:root{
+
+
+    /* Fonts */
+    --font-manrope: 'Manrope', sans-serif;
+
+
+    /* Header */
+    /* Cores */
+    --header-color-segundaria:#595959;
+    --header-color-primaria: #fafafa;
+    --header-destaque-color: #214ea8;
+    --header-background: black;
+    /* Fontes do header*/
+    --header-font-family: 'Manrope', sans-serif;
+    --header-font-family-destaque: 'Manrope', sans-serif;
+    --header-font-weight-extralight: 200;
+    --header-font-weight-light:300;
+    --header-font-weight-regular:400;
+    --header-font-weight-medium:500;
+    /* Tamanhos da fontes */
+    --header-font-size-texto: 15px; 
+    --header-font-size-profissao: 12px; 
+    
+
+    /* Main */
+    /* Cores */
+    --main-color-segundaria:#5959592d;
+    --main-color-primaria: #fafafa;
+    --main-destaque-color: #214ea8;
+    --main-background: black;
+    /* Fontes do header*/
+    --main-font-family: 'Manrope', sans-serif;
+    --main-font-family-destaque: 'Manrope', sans-serif;
+    --main-font-weight-extralight: 200;
+    --main-font-weight-light:300;
+    --main-font-weight-regular:400;
+    --main-font-weight-medium:500;
+    /* Tamanhos da fontes */
+    --main-font-size-titulo: 40px; 
+    
+    
+
+
+    
+
+
+    /* Footer */
+    --footer-color-segundaria:#595959;
+    --footer-color-primaria: #fafafa;
+    --footer-destaque-color: #214ea8;
+    --footer-background: black;
+    /* Fontes do footer*/
+    --footer-font-family: 'Manrope', sans-serif;
+    --footer-font-family-destaque: 'Manrope', sans-serif;
+    --footer-font-weight-extralight: 200;
+    --footer-font-weight-light:300;
+    --footer-font-weight-regular:400;
+    --footer-font-weight-medium:500;
+    /* Tamanhos da fontes */
+    --footer-font-size-texto: 13px; 
+    --footer-font-size-ano: 13px; 
+    
+}
