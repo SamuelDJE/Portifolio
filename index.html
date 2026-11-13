@@ -1,47 +1,435 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR"><!--
+ =====================================================
+ DOCUMENTO PRINCIPAL — PORTFÓLIO
+ ===================================================== -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/global.css">
-    <title>Meu Portifolio</title>
+     <meta charset="utf-8" />
+     <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport" />
+     <title>Samuel Santos — Portfólio Jovem Aprendiz UX Design</title>
+     <meta content="Portfólio de Samuel Fernando Pereira dos Santos, candidato a Jovem Aprendiz em UX Design."
+          name="description" />
+     <link href="https://fonts.googleapis.com" rel="preconnect" />
+     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600&amp;family=Permanent+Marker&amp;family=DM+Sans:wght@400;600;700&amp;display=swap"
+          rel="stylesheet" />
+
+     <link href="src/styles/main.css" rel="stylesheet" />
 </head>
+
 <body>
-    <!-- O CABEÇALHO: Fica fixo no topo devido ao Flexbox do body -->
-    <header>
-        <div class="conteudo-header-esquerdo">
-            <p class="texto-header">SAMUEL <span class="texto-destaque-header">FERNANDO</span></p>
-            <p class="profissao-header">DESIGN<br> DEVELOPMENT<br> CREATIVE</p>
-        </div>
-    </header>
+     <!-- Filtro SVG que deixa o nome com borda “desenhada à mão” -->
+     <svg aria-hidden="true" height="0" style="position:absolute" width="0">
+          <filter id="rough">
+               <feturbulence basefrequency=".035" numoctaves="3" seed="4" type="fractalNoise"></feturbulence>
+               <fedisplacementmap in="SourceGraphic" scale="7"></fedisplacementmap>
+          </filter>
+     </svg>
+     <!-- =====================================================
+     BARRA SUPERIOR
+     ===================================================== -->
+     <header class="portfolio__top">
+          <nav aria-label="Seções">
+               <div class="portfolio__l"><a href="#inicio">Início</a><a href="#biolab">01 Biolab</a><a href="#rota">02
+                         Rota Cultural</a><a href="#godrinking">03 GoDrinking</a><a href="#rango">04 Rango</a><a
+                         href="#processo">Processo</a></div>
+               <a class="portfolio__r" href="#contato">Contato</a>
+          </nav>
+     </header>
+     <main>
+          <!-- =====================================================
+     CAPA
+     ===================================================== -->
+          <section class="portfolio__hero portfolio__slide" id="inicio">
+               <div>
+                    <div class="portfolio__tag"><small class="portfolio__a">PORTFÓLIO</small><small
+                              class="portfolio__b">2026</small>
+                         <h1 class="portfolio__name"><span>Samuel</span><span>Santos</span></h1>
+                    </div>
+                    <p class="portfolio__big">Jovem Aprendiz<br /><b>UX Design</b></p>
+               </div>
+               <address class="portfolio__contacts" id="contato" style="font-style:normal">
+                    <a href="https://github.com/SamuelDJE"><small>GitHub:</small>SamuelDJE</a>
+                    <a href="https://wa.me/5511953763222" target="_blank"><small>Contato:</small>11 953763222</a>
+                    <a href="mailto:Samufe78@gmail.com"><small>E-mail:</small>Samufe78@gmail.com</a>
+               </address>
+          </section>
+          <!-- =====================================================
+     01 · BIOLAB
+     ===================================================== -->
+          <section class="portfolio__proj portfolio__slide portfolio__dk" id="biolab">
+               <div class="portfolio__glow"></div>
+               <div class="portfolio__row">
+                    <div class="portfolio__vis portfolio__rv">
+                         <figure class="portfolio__shot" style="margin:0"><img
+                                   alt="Tela inicial do redesign da Biolab &amp; Co" data-zoom="" height="862"
+                                   src="src/images/biolab-interface.webp" width="1893" /></figure>
+                         <p class="portfolio__cap">Tela inicial do redesign</p>
+                    </div>
+                    <div class="portfolio__info">
+                         <p class="portfolio__eyebrow">Web · Projeto acadêmico individual</p>
+                         <h2>Biolab &amp; Co</h2>
+                         <p class="portfolio__lead">Redesign de um site real. O professor entregou o site de uma empresa
+                              à turma e pediu: o que melhorar e o que manter. O meu foi um dos mais elogiados, pela
+                              estética e pelo uso de IA dirigida como engenheiro de prompt, não só “pedir e colar”.</p>
+                         <div class="portfolio__blk">
+                              <h3>Contexto</h3>
+                              <p>Primeiro projeto em HTML, no segundo semestre de Desenvolvimento de Sistemas (Senai). O
+                                   professor avaliou com nota 10. A Biolab é uma companhia farmacêutica, de genéricos e
+                                   de produtos próprios patenteados, em saúde humana e animal.</p>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>Stack</h3>
+                              <p>HTML, CSS e JavaScript puro, sem nenhum framework.</p>
+                              <ul class="portfolio__chips">
+                                   <li>HTML</li>
+                                   <li>CSS</li>
+                                   <li>JavaScript</li>
+                                   <li>Figma</li>
+                              </ul>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>IA, com direção</h3>
+                              <p><b>Gemini</b> como pair programmer no código. <b>ChatGPT</b> nas imagens: eu montava a
+                                   ideia no Figma e pedia variações, removia fundos de ícones, gerava ícones exclusivos
+                                   e redesenhava as marcas.</p>
+                         </div>
+                         <a class="portfolio__btn" href="https://projeto-biolab.vercel.app/" rel="noopener"
+                              target="_blank">Ver o site publicado <i aria-hidden="true">→</i></a>
+                    </div>
+                    <div class="portfolio__side"><span class="portfolio__num">01</span><small>Biolab &amp; Co</small>
+                    </div>
+               </div>
+          </section>
+          <!-- Marcas redesenhadas, em fundo preto -->
+          <section aria-label="Marcas redesenhadas" class="portfolio__band">
+               <h3>Marcas redesenhadas</h3>
+               <div class="portfolio__marq">
+                    <ul class="portfolio__track" id="track">
+                         <li><img alt="Biolab &amp; Co" loading="lazy" src="src/images/marca-co.svg" /></li>
+                         <li><img alt="Biolab Farmacêutica" loading="lazy" src="src/images/marca-farmac-utica.svg" />
+                         </li>
+                         <li><img alt="Biolab Genéricos" loading="lazy" src="src/images/marca-gen-ricos.svg" /></li>
+                         <li><img alt="Avert Saúde Humana" loading="lazy" src="src/images/imagem-projeto-05.svg" /></li>
+                         <li><img alt="Avert Saúde Animal" loading="lazy" src="src/images/imagem-projeto-06.svg" /></li>
+                         <li><img alt="Exzell Pharma" loading="lazy" src="src/images/imagem-projeto-07.svg" /></li>
+                         <li><img alt="PetNutrition" loading="lazy" src="src/images/imagem-projeto-08.svg" /></li>
+                    </ul>
+               </div>
+          </section>
+          <!-- =====================================================
+     02 · ROTA CULTURAL
+     ===================================================== -->
+          <section class="portfolio__proj portfolio__slide portfolio__dk" id="rota">
+               <div class="portfolio__glow"></div>
+               <div class="portfolio__row">
+                    <div class="portfolio__vis portfolio__rv">
+                         <figure class="portfolio__shot" style="margin:0"><img
+                                   alt="Fase 2 do Rota Cultural: nova interface em desenvolvimento" data-zoom=""
+                                   height="906" src="src/images/rota-cultural-interface.webp" width="1892" /></figure>
+                         <p class="portfolio__cap">Fase 2 · nova interface, ainda em desenvolvimento</p>
+                    </div>
+                    <div class="portfolio__info">
+                         <p class="portfolio__eyebrow">Web · Projeto acadêmico em grupo · Em desenvolvimento</p>
+                         <h2>Rota Cultural</h2>
+                         <p class="portfolio__lead">Um único site para escolher o destino, os locais para visitar, onde
+                              dormir e onde comer, dando visibilidade a culturas, comércios, criadores e artistas
+                              locais. O viajante vive a viagem como um morador.</p>
+                         <div class="portfolio__blk">
+                              <h3>A ideia</h3>
+                              <p>Nasceu no segundo semestre do curso técnico do Senai. Responde o que ninguém quer
+                                   descobrir só na chegada: o mercado aceita meu cartão benefício? Há posto de gasolina,
+                                   hospital público ou particular e delegacia perto de onde vou ficar?</p>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>Roteiro interativo</h3>
+                              <p>O planejamento muda conforme o perfil: em família, com amigos, sozinho, casal,
+                                   namorados ou com o pet (cachorro, gato, peixe). Foi pensado para quem não pode pagar
+                                   guia turístico, sem substituir o guia.</p>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>Duas fases</h3>
+                              <p><b>Fase 1:</b> HTML, CSS e JavaScript puro, com Figma. <b>Fase 2:</b> React com Vite,
+                                   componentização, nova estética, mais usabilidade e telas que se explicam. Sai do
+                                   visual amador para um nível profissional. Pronto no 4º semestre.</p>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>IA e tecnologias</h3>
+                              <p><b>ChatGPT</b> como pair programmer na refatoração do HTML para React. <b>Claude
+                                        Code</b>, <b>Figma</b> e <b>Gemini</b> na nova estética.</p>
+                              <ul class="portfolio__chips">
+                                   <li>HTML</li>
+                                   <li>CSS</li>
+                                   <li>JavaScript</li>
+                                   <li>Figma</li>
+                                   <li>React</li>
+                                   <li>Vite</li>
+                              </ul>
+                         </div>
+                         <p class="portfolio__note">A fase 2 está em manutenção e não tem demo pública. A fase 1 está no
+                              ar para você explorar.</p>
+                         <a class="portfolio__btn" href="https://rota-cultural.vercel.app/" rel="noopener"
+                              target="_blank">Ver a fase 1 no ar <i aria-hidden="true">→</i></a>
+                    </div>
+                    <div class="portfolio__side"><span class="portfolio__num">02</span><small>Rota Cultural</small>
+                    </div>
+               </div>
+          </section>
+          <!-- =====================================================
+     03 · GODRINKING
+     ===================================================== -->
+          <section class="portfolio__proj portfolio__slide portfolio__dk" id="godrinking">
+               <div class="portfolio__glow"></div>
+               <div class="portfolio__row">
+                    <div class="portfolio__vis portfolio__rv" data-tabs="">
+                         <div class="portfolio__tabs" role="tablist"><button aria-selected="true" data-tab="g1"
+                                   role="tab">Alta fidelidade</button><button aria-selected="false" data-tab="g2"
+                                   role="tab">Wireframe</button></div>
+                         <div id="g1" role="tabpanel">
+                              <div class="portfolio__shot portfolio__stage"><img
+                                        alt="Alta fidelidade do GoDrinking: início, home e produtos" data-zoom=""
+                                        height="571" src="src/images/godrinking-interface.webp" width="706" /><img
+                                        alt="Tela de detalhes do produto" class="portfolio__tall" data-zoom=""
+                                        height="625" src="src/images/imagem-projeto-11.webp" width="297" /></div>
+                         </div>
+                         <div hidden="" id="g2" role="tabpanel">
+                              <div class="portfolio__shot portfolio__stage"><img alt="Wireframe do GoDrinking"
+                                        data-zoom="" height="526" src="src/images/godrinking-interface-2.webp"
+                                        width="1080" /></div>
+                         </div>
+                         <p class="portfolio__cap">Aqui só as telas do Figma.</p>
+                    </div>
+                    <div class="portfolio__info">
+                         <p class="portfolio__eyebrow">Mobile · Projeto em turma · React Native</p>
+                         <h2>GoDrinking</h2>
+                         <p class="portfolio__lead">App de compra de energéticos de forma rápida, prática e segura.
+                              Projeto que o professor usou para ensinar React Native e que me ensinou o caminho do
+                              design: brainstorm, referências, wireframe e alta fidelidade no Figma.</p>
+                         <div class="portfolio__blk">
+                              <h3>O que aprendi</h3>
+                              <p>Fazer wireframe e brainstorm, buscar referências no Pinterest, Behance, Dribbble e
+                                   Figma Community, e levar a ideia até a tela de alta fidelidade.</p>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>Tecnologias</h3>
+                              <ul class="portfolio__chips">
+                                   <li>Figma</li>
+                                   <li>React Native</li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="portfolio__side"><span class="portfolio__num">03</span><small>GoDrinking</small></div>
+               </div>
+          </section>
+          <!-- =====================================================
+     04 · RANGO
+     ===================================================== -->
+          <section class="portfolio__proj portfolio__slide portfolio__dk" id="rango">
+               <div class="portfolio__glow"></div>
+               <div class="portfolio__row">
+                    <div class="portfolio__vis portfolio__rv" data-tabs="">
+                         <div class="portfolio__tabs" role="tablist"><button aria-selected="true" data-tab="r1"
+                                   role="tab">Alta fidelidade</button><button aria-selected="false" data-tab="r2"
+                                   role="tab">Wireframe</button><button aria-selected="false" data-tab="r3"
+                                   role="tab">Sitemap</button></div>
+                         <div id="r1" role="tabpanel">
+                              <div class="portfolio__shot portfolio__stage"><img alt="Tela de abertura do Rango"
+                                        class="portfolio__tall" data-zoom="" height="458"
+                                        src="src/images/rango-tela-inicial.webp" width="282" /></div>
+                         </div>
+                         <div hidden="" id="r2" role="tabpanel">
+                              <div class="portfolio__shot portfolio__stage"><img
+                                        alt="Wireframes do Rango: splash, login, cadastro, esqueci a senha e home"
+                                        data-zoom="" height="538" src="src/images/rango-wireframes.webp" width="1107" />
+                              </div>
+                         </div>
+                         <div hidden="" id="r3" role="tabpanel">
+                              <div class="portfolio__shot portfolio__stage"><img
+                                        alt="Sitemap do Rango: público, cliente e administrador" class="portfolio__tall"
+                                        data-zoom="" height="747" src="src/images/rango-sitemap.webp" width="621" />
+                              </div>
+                         </div>
+                    </div>
+                    <div class="portfolio__info">
+                         <p class="portfolio__eyebrow">Mobile · Projeto individual · Em desenvolvimento</p>
+                         <h2>Rango</h2>
+                         <p class="portfolio__lead">App de delivery para um único restaurante, com identidade amarela e
+                              preta e a tagline “Seu rango, do seu jeito.”. Wireframe, brainstorm e alta fidelidade
+                              prontos; ainda não migrado para React Native.</p>
+                         <div class="portfolio__blk">
+                              <h3>Em que etapa está</h3>
+                              <p>Etapa visual em andamento. O sitemap separa o app em público e nativo, usuário
+                                   (cliente) e administrador (painel web).</p>
+                         </div>
+                         <div class="portfolio__blk">
+                              <h3>Tecnologias</h3>
+                              <ul class="portfolio__chips">
+                                   <li>Figma</li>
+                                   <li>React Native (próxima etapa)</li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="portfolio__side"><span class="portfolio__num">04</span><small>Rango</small></div>
+               </div>
+          </section>
+          <!-- =====================================================
+     05 · COMO EU TRABALHO
+     ===================================================== -->
+          <section class="portfolio__proc portfolio__slide portfolio__dk" id="processo">
+               <div class="portfolio__glow"></div>
+               <div class="portfolio__wrap">
+                    <p class="portfolio__eyebrow">05 · Como eu trabalho</p>
+                    <h2>Processo e repertório</h2>
+                    <ol class="portfolio__steps portfolio__rv">
+                         <li><b>Requisitos</b><span>Levanto os requisitos e entendo a dor da pessoa/projeto.</span></li>
+                         <li><b>Dados</b><span>Busco dados para entender o que o usuário precisa.</span></li>
+                         <li><b>Testes no Figma</b><span>Faço vários testes e protótipos.</span></li>
+                         <li><b>Peças de Lego</b><span>As ideias do brainstorm viram peças que eu encaixo para montar o
+                                   design.</span></li>
+                         <li><b>Variações com IA</b><span>Levo a minha versão à IA para ver outras variações a partir
+                                   dela.</span></li>
+                         <li><b>Validação</b><span>Mostro ao grupo ou ao líder responsável pelo projeto.</span></li>
+                    </ol>
+                    <div class="portfolio__result portfolio__rv"><strong>4 projetos</strong>
+                         <p>Nos quatro projetos acadêmicos que fiz até agora, professores e grupo aprovaram: dois de
+                              primeira e outros dois na segunda fase, com uma reestilização visual completa.</p>
+                    </div>
+                    <div class="portfolio__two">
+                         <div class="portfolio__rv">
+                              <h3>Prompt com método</h3>
+                              <ul class="portfolio__prompts">
+                                   <li><b>Zero shot</b><span>Peço direto, sem exemplos.</span></li>
+                                   <li><b>Follow-up</b><span>Refino a resposta com novas perguntas.</span></li>
+                                   <li><b>Meta prompt</b><span>Peço à IA para melhorar o próprio prompt.</span></li>
+                                   <li><b>Role prompt</b><span>Defino um papel para a IA assumir.</span></li>
+                              </ul>
+                              <h3 style="margin-top:32px">Também uso</h3>
+                              <ul class="portfolio__chips">
+                                   <li>Arquivo spec</li>
+                              </ul>
+                         </div>
+                         <div class="portfolio__about portfolio__rv">
+                              <h3>Repertório visual</h3>
+                              <p>Sou Samuel e estou no 3º semestre do curso de Desenvolvimento de Sistemas no Senai,
+                                   seguindo para front-end e UI/UX design. Meu olhar de estética vem de mais de 6 meses
+                                   na mídia da igreja, editando vídeos e criando posts, e das referências que busco no
+                                   Pinterest, Behance, Dribbble e Figma Community.
+                              E meu próximo objetivo academico e profissional é iniciar um curso de Design UX e UI. </p>
+                              <p>Aprendo também com Gabriel Juste e com os professores Lucas Correia e Matheus Alvarez.
+                                   Gosto de tons de azul-marinho, texturas com ruído e tipografia com personalidade, e
+                                   procuro que cada projeto tenha identidade própria.</p>
+                         </div>
+                    </div>
+                    <div class="portfolio__rv" style="margin-top:56px">
+                         <h3 class="portfolio__tech-h">Tecnologias</h3>
+                         <ul class="portfolio__tech">
+                              <li><svg aria-hidden="true" fill="none" stroke="#61dafb" stroke-width="1.1"
+                                        viewbox="0 0 24 24">
+                                        <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
+                                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse>
+                                        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse>
+                                        <circle cx="12" cy="12" fill="#61dafb" r="1.8" stroke="none"></circle>
+                                   </svg>React</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <rect fill="#f7df1e" height="20" width="20" x="2" y="2"></rect><text fill="#111"
+                                             font-family="Arial,sans-serif" font-size="10.5" font-weight="800"
+                                             text-anchor="end" x="21" y="20">JS</text>
+                                   </svg>JavaScript</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <path d="M3 2l1.7 19L12 23l7.3-2L21 2z" fill="#e44d26"></path>
+                                        <path d="M12 4v17.2l5.9-1.6L19.3 4z" fill="#f16529"></path><text fill="#fff"
+                                             font-family="Arial,sans-serif" font-size="10" font-weight="800"
+                                             text-anchor="middle" x="12" y="16">5</text>
+                                   </svg>HTML5</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <path d="M3 2l1.7 19L12 23l7.3-2L21 2z" fill="#1572b6"></path>
+                                        <path d="M12 4v17.2l5.9-1.6L19.3 4z" fill="#33a9dc"></path><text fill="#fff"
+                                             font-family="Arial,sans-serif" font-size="10" font-weight="800"
+                                             text-anchor="middle" x="12" y="16">3</text>
+                                   </svg>CSS3</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <rect fill="#f05032" height="16.6" rx="2.2" transform="rotate(45 12 12)"
+                                             width="16.6" x="3.7" y="3.7"></rect>
+                                        <g fill="#fff" stroke="#fff" stroke-linecap="round" stroke-width="1.7">
+                                             <path d="M9.6 8v8M9.6 10.2l4.6 4.4"></path>
+                                             <circle cx="9.6" cy="7.6" r="1.5"></circle>
+                                             <circle cx="9.6" cy="16.4" r="1.5"></circle>
+                                             <circle cx="14.4" cy="14.8" r="1.5"></circle>
+                                        </g>
+                                   </svg>Git</li>
+                              <li><svg aria-hidden="true" fill="#fff" viewbox="0 0 24 24">
+                                        <path
+                                             d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.5-1.11-1.5-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z">
+                                        </path>
+                                   </svg>GitHub</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <rect fill="#fff" height="18" rx="2.5" stroke="#111" stroke-width="1.4"
+                                             width="18" x="3" y="3"></rect><text fill="#111" font-family="Georgia,serif"
+                                             font-size="13" font-weight="700" text-anchor="middle" x="12"
+                                             y="17">N</text>
+                                   </svg>Notion</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <path d="M11 2H8a3 3 0 0 0 0 6h3z" fill="#f24e1e"></path>
+                                        <path d="M11 2h3a3 3 0 0 1 0 6h-3z" fill="#ff7262"></path>
+                                        <path d="M11 8H8a3 3 0 0 0 0 6h3z" fill="#a259ff"></path>
+                                        <circle cx="14" cy="11" fill="#1abcfe" r="3"></circle>
+                                        <path d="M8 14h3v3a3 3 0 1 1-3-3z" fill="#0acf83"></path>
+                                   </svg>Figma</li>
+                              <li><svg aria-hidden="true" viewbox="0 0 24 24">
+                                        <defs>
+                                             <lineargradient id="gm" x1="0" x2="1" y1="1" y2="0">
+                                                  <stop offset="0" stop-color="#4285f4"></stop>
+                                                  <stop offset=".6" stop-color="#9b72cb"></stop>
+                                                  <stop offset="1" stop-color="#d96570"></stop>
+                                             </lineargradient>
+                                        </defs>
+                                        <path d="M12 1.5c.7 5.8 4.7 9.8 10.5 10.5-5.8.7-9.8 4.7-10.5 10.5C11.3 16.7 7.3 12.7 1.5 12 7.3 11.3 11.3 7.3 12 1.5z"
+                                             fill="url(#gm)"></path>
+                                   </svg>Gemini</li>
+                              <li><svg aria-hidden="true" fill="none" stroke="#fff" stroke-width="1.4"
+                                        viewbox="0 0 24 24">
+                                        <rect height="10.4" rx="3" transform="rotate(0 12 12)" width="6" x="9" y="2.2">
+                                        </rect>
+                                        <rect height="10.4" rx="3" transform="rotate(60 12 12)" width="6" x="9" y="2.2">
+                                        </rect>
+                                        <rect height="10.4" rx="3" transform="rotate(120 12 12)" width="6" x="9"
+                                             y="2.2"></rect>
+                                        <rect height="10.4" rx="3" transform="rotate(180 12 12)" width="6" x="9"
+                                             y="2.2"></rect>
+                                        <rect height="10.4" rx="3" transform="rotate(240 12 12)" width="6" x="9"
+                                             y="2.2"></rect>
+                                        <rect height="10.4" rx="3" transform="rotate(300 12 12)" width="6" x="9"
+                                             y="2.2"></rect>
+                                   </svg>OpenAI</li>
+                              <li><svg aria-hidden="true" fill="none" stroke="#d97757" stroke-linecap="round"
+                                        stroke-width="2.1" viewbox="0 0 24 24">
+                                        <path d="M12 9.2V2.6" transform="rotate(0 12 12)"></path>
+                                        <path d="M12 9.2V4" transform="rotate(30 12 12)"></path>
+                                        <path d="M12 9.2V2.6" transform="rotate(60 12 12)"></path>
+                                        <path d="M12 9.2V4" transform="rotate(90 12 12)"></path>
+                                        <path d="M12 9.2V2.6" transform="rotate(120 12 12)"></path>
+                                        <path d="M12 9.2V4" transform="rotate(150 12 12)"></path>
+                                        <path d="M12 9.2V2.6" transform="rotate(180 12 12)"></path>
+                                        <path d="M12 9.2V4" transform="rotate(210 12 12)"></path>
+                                        <path d="M12 9.2V2.6" transform="rotate(240 12 12)"></path>
+                                        <path d="M12 9.2V4" transform="rotate(270 12 12)"></path>
+                                        <path d="M12 9.2V2.6" transform="rotate(300 12 12)"></path>
+                                        <path d="M12 9.2V4" transform="rotate(330 12 12)"></path>
+                                   </svg>Claude</li>
+                         </ul>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <footer class="portfolio__foot">
+          <p><b style="color:#fff">Samuel Fernando Pereira dos Santos</b></p>
+          <p>GitHub: SamuelDJE · 11 953763222 · Samufe78@gmail.com</p>
+     </footer>
+     <dialog id="lb"><img alt="" /><button aria-label="Fechar">×</button></dialog>
 
-    <!-- O CONTEÚDO PRINCIPAL: Ocupa todo o espaço central da tela -->
-    <main>
-        <div class="conteudo-main-principal">
-            <!-- Ponto final adicionado no "construindo." -->
-            <h1 class="titulo">Em breve,<br>algo que estou <span class="titulo-destaque">construindo.</span></h1>
-        </div>
-    </main>
-
-    <footer>
-        <div class="conteudo-footer-principal">
-            
-            <div class="conteudo-footer-esquerdo">
-                <div class="navegacao-lateral">
-                    <span class="ponto ativo"></span>
-                    <span class="ponto"></span>
-                    <span class="ponto"></span>
-                    <span class="ponto"></span>
-                </div>
-                <p class="ano-footer">2026</p> 
-            </div>
-            
-            <!-- Lado Direito do Rodapé (Direitos) -->
-            <div class="conteudo-footer-direito">
-                <p class="texto-footer">© 2026 <span class="texto-destaque-footer">Samuel Fernando.</span><br> Todos os direitos reservados.</p>
-            </div>
-            
-        </div>
-    </footer>
+     <script defer="True" src="src/scripts/main.js"></script>
 </body>
+
 </html>
