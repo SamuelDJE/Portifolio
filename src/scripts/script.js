@@ -131,3 +131,30 @@ document.querySelectorAll(revealSelectors).forEach((el, i) => {
   el.style.transitionDelay = (i % 5) * 70 + 'ms';
   revealObserver.observe(el);
 });
+
+
+/* =====================================================
+   08 · PROTÓTIPO DO RANGO
+   Alterna entre os modos claro e escuro no iframe e mantém
+   os botões em sincronia com a página aberta lá dentro.
+   ===================================================== */
+const protoButtons = [...document.querySelectorAll('.project__proto-btn')];
+const protoFrame = document.querySelector('.project__proto-frame');
+const protoOpen = document.querySelector('.project__proto-open');
+
+function setProto(mode) {
+  const url = '/src/prototipos/rango-' + mode + '.html';
+  if (!protoFrame.src.endsWith(url)) protoFrame.src = url;
+  protoOpen.href = url;
+  protoButtons.forEach((btn) => btn.setAttribute('aria-pressed', btn.dataset.proto === mode));
+}
+
+protoButtons.forEach((btn) => btn.addEventListener('click', () => setProto(btn.dataset.proto)));
+
+// Se a pessoa clicar em "Ver modo escuro" dentro do protótipo, os botões acompanham
+protoFrame.addEventListener('load', () => {
+  try {
+    const mode = protoFrame.contentWindow.location.pathname.match(/rango-(claro|escuro)/);
+    if (mode) setProto(mode[1]);
+  } catch (e) { /* protótipo aberto de outra origem: ignora */ }
+});

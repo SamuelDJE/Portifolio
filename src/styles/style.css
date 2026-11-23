@@ -91,6 +91,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-sky); out
 .button:hover .button__icon { transform: rotate(-45deg); }
 
 
+.button--ghost { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, .5); }
+.button--ghost:hover { background: rgba(255, 255, 255, .12); }
+.button--ghost .button__icon { background: #fff; color: #050b20; }
+
+
 /* =====================================================
    06 · PROJETOS (40% imagem · 50% texto · 10% elemento)
    Biolab, Rota Cultural, GoDrinking e Rango.
@@ -117,6 +122,27 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-sky); out
 .project__side { align-self: stretch; display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 20px 0; border-radius: 4px; background: linear-gradient(180deg, #f2f1ec, #a8c4ff); color: #0a1330; }
 .project__number { writing-mode: vertical-rl; font: 300 clamp(3.4rem, 8vw, 8rem)/1 var(--font-display); }
 .project__side-label { writing-mode: vertical-rl; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; }
+
+
+/* Assinatura do projeto: logo pequeno + linha curta + frase de contexto */
+.project__brandline { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+.project__logo { flex: none; width: auto; max-width: 150px; object-fit: contain; }
+.project__logo--biolab { height: 20px; }
+.project__logo--rota { height: 26px; }
+.project__logo--godrinking { height: 40px; }
+.project__logo--rango { height: 48px; }
+.project__rule { flex: none; width: 36px; height: 1px; background: var(--color-line); }
+.project__brandline .eyebrow { min-width: 0; }
+.project__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.project__actions .button { margin-top: 0; }
+
+/* Protótipo interativo do Rango (iframe com modo claro e escuro) */
+.project__proto { border: 1px solid var(--color-line); border-radius: 6px; overflow: hidden; background: #222; box-shadow: 0 30px 70px -30px #000; }
+.project__proto-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px; border-bottom: 1px solid var(--color-line); }
+.project__proto-btn { font: 600 12px var(--font-body); padding: 8px 16px; border: 1px solid var(--color-line); border-radius: 99px; background: transparent; color: var(--color-ink); cursor: pointer; }
+.project__proto-btn[aria-pressed=true] { background: #f2f1ec; border-color: #f2f1ec; color: #050b20; }
+.project__proto-open { margin-left: auto; font-size: 12px; color: var(--color-sky); text-decoration: none; }
+.project__proto-frame { display: block; width: 100%; height: min(68vh, 620px); border: 0; background: #222; }
 
 
 /* =====================================================
@@ -148,7 +174,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-sky); out
 .process__step-text { color: var(--color-mute); font-size: 15px; }
 .process__result { margin: 40px 0; padding: 28px; border: 1px solid var(--color-line); border-radius: 6px; display: flex; flex-wrap: wrap; gap: 20px 50px; align-items: center; background: rgba(47, 99, 240, .14); }
 .process__result-number { font: 300 clamp(2.4rem, 5vw, 4rem)/1 var(--font-display); color: #fff; }
-.process__result-text { max-width: 56ch; color: #dbe3fa; }
+.process__result-body { display: grid; gap: 12px; max-width: 68ch; }
+.process__result-text { color: #dbe3fa; }
 .process__columns { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 64px); margin-top: 50px; }
 .process__subtitle { font: 600 14px var(--font-display); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
 .process__subtitle--spaced { margin-top: 32px; }
